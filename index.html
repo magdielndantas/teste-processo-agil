@@ -15,6 +15,14 @@
             background-attachment: fixed;
         }
 
+        #logo {
+            height: auto;
+            max-width: 180px;
+
+            top: 60px !important;
+            left: 56px !important;
+        }
+
         #shape {
             mix-blend-mode: hard-light;
             background: #202C49;
@@ -34,12 +42,13 @@
     </style>
 </head>
 
-<body class="bg-light">
+<body class="bg-light ">
     <div class="d-flex flex-row">
-        <div class="col-4 bg-white  vh-100 d-flex justify-content-center align-items-center">
-            <main class="m-5 w-100">
-                <header class="mx-auto mb-4">
-                    <h2>Inscreva-se hoje</h2>
+        <div class="col-4 bg-white d-flex flex-column  vh-100 d-flex justify-content-center align-items-center position-relative">
+            <img src="logo.svg" alt="Processo Ágil" class="position-absolute" id="logo">
+            <main class="m-5 w-100 p-5">
+                <header class="mb-4">
+                    <h4>Inscreva-se hoje</h4>
                 </header>
                 <form action="#">
                     <div class="form-group">
@@ -60,17 +69,17 @@
                             required />
                         <span class="error"></span>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block rounded-pill">Enviar inscrição</button>
+                    <button type="submit" class="btn btn-primary btn-block rounded-pill" style="background: #202C49;">Enviar inscrição</button>
                 </form>
             </main>
 
         </div>
         <div class="col-8 d-flex flex-column justify-content-center" id="shape">
-            <div class="text ml-5">
-                <h1>Cresça o seu escritório
+            <div class="text m-5">
+                <h1 class="display-3">Cresça o seu escritório
                     com o Software Jurídico da Processo Ágil
                 </h1>
-                <p>Ajudamos escritórios de advocacia a crescerem, aliando inteligência artificial com uma metodologia
+                <p class="lead">Ajudamos escritórios de advocacia a crescerem, aliando inteligência artificial com uma metodologia
                     exclusiva.</p>
             </div>
         </div>
